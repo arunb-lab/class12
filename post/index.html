@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#f5f5f5; }
+        .container { width:360px; margin:60px auto; }
+        .login-table { width:100%; border-collapse:collapse; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.08); }
+        .login-table td { padding:10px; vertical-align:middle; }
+        .login-header { background:#0078D4; color:#fff; font-size:16px; text-align:center; padding:12px; }
+        input[type="text"], input[type="password"] { width:100%; padding:8px; box-sizing:border-box; }
+        .actions { text-align:center; padding:12px 0; }
+        input[type="submit"], input[type="reset"] { padding:8px 14px; margin:0 6px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="login.php" method="post" autocomplete="off">
+            <table class="login-table" role="presentation">
+                <tr>
+                    <td class="login-header" colspan="2">Please sign in</td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" required placeholder="Your name" /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" required placeholder="Password" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="actions">
+                        <input type="submit" value="Login" />
+                        <input type="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
